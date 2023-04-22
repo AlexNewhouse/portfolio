@@ -1,0 +1,8 @@
+.section {
+  &__content {
+    margin: 0 auto;
+    max-width: var(--breakpoint-lg);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

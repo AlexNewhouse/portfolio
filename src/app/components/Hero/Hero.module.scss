@@ -1,0 +1,38 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  overflow-y: hidden;
+  height: calc(100vh - 4rem);
+
+  &__content {
+    display: grid;
+    place-content: center left;
+    width: 20rem;
+  }
+
+  &__image-container {
+    display: grid;
+    position: relative;
+    place-items: end center;
+  }
+
+  &__blur {
+    left: 50%;
+    position: absolute;
+    filter: blur(45px);
+    background: var(--primary-radial-glow);
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translateX(-50%);
+  }
+
+  &__image {
+    width: 520px;
+    height: 600px;
+    position: relative;
+    object-fit: contain;
+    object-position: bottom;
+  }
+}
