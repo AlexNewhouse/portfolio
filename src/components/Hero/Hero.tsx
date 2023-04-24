@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Section } from '../Section';
+import { Section } from '@/components/Section';
 
 import styles from './Hero.module.scss';
 
@@ -17,8 +17,6 @@ export const Hero = () => {
           className={styles['hero__image']}
           src="/assets/images/me.png"
           alt="a headshot of me"
-          // width={540}
-          // height={600}
           fill
         />
       </div>

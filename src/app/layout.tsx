@@ -2,7 +2,8 @@ import { Inter, Press_Start_2P } from 'next/font/google';
 
 import clsx from 'clsx';
 
-import './styles/_globals.scss';
+import '@/styles/_globals.scss';
+import { Nav } from '@/components/Nav';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const pressStart2p = Press_Start_2P({
@@ -26,7 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={fonts}>
-        <nav style={{ height: '4rem' }}>Nav goes here</nav>
+        <Nav />
+        {/* <nav style={{ height: '4rem' }}>Nav goes here</nav> */}
         {children}
       </body>
     </html>
